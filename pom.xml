@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.aumasoft</groupId>
+    <artifactId>TDD</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <name>TDD</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>template-engine</module>
+        <module>fizz-buzz</module>
+        <module>supermarket</module>
+        <module>hangman</module>
+        <module>game-of-life</module>
+        <module>prime-factors</module>
+        <module>string-calculator</module>
+        <module>gilded-rose</module>
+        <module>tennis-refactoring</module>
+        <module>csv-parser</module>
+        <module>social-network</module>
+        <module>authentication</module>
+    </modules>
+
+</project>

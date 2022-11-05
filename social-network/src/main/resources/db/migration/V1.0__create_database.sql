@@ -1,0 +1,3 @@
+CREATE TABLE items (
+    ID SERIAL PRIMARY KEY
+)
