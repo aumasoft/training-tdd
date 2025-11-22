@@ -1,0 +1,27 @@
+{
+  "name": "tdd-container",
+  "image": "mcr.microsoft.com/devcontainers/java:0-21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    },
+    "ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+      "version": "latest",
+      "moby": true
+    }
+  },
+  
+  "postCreateCommand": "mvn compile",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
