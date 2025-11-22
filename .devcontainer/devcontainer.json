@@ -1,27 +1,25 @@
 {
-  "name": "tdd-container",
-  "image": "mcr.microsoft.com/devcontainers/java:0-21",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "none",
-      "installMaven": "true",
-      "installGradle": "false"
-    },
-    "ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:1": {
-      "version": "latest",
-      "moby": true
-    }
-  },
-  
-  "postCreateCommand": "mvn compile",
+	"name": "Java",
+	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "streetsidesoftware.code-spell-checker",
-        "vscjava.vscode-java-pack"
-      ]
-    }
-  }
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "false"
+		},
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        },
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest",
+            "moby": true,
+            "dockerDashComposeVersion": "v2"
+         }
+	},
+
+	// "forwardPorts": [],
+  
+	"postCreateCommand": "mvn compile"
+
 }
